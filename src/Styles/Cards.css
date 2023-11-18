@@ -1,0 +1,42 @@
+.gridstyle {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  padding: 20px;
+}
+
+.span {
+  color: #0174be;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Courier New", Courier, monospace;
+}
+.boxstyle {
+  box-shadow: 9px 19px 53px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 9px 19px 53px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 9px 19px 53px 0px rgba(0, 0, 0, 0.3);
+  width: 22rem;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  animation-name: zoomin;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  transition: ease-in-out 500ms;
+}
+
+.boxstyle:hover{
+  transform: scale(1.08);
+  border: 2px solid #0174be ;
+  /* border-style:dashed; */
+  /* height:25rem; */
+}
+@keyframes zoomin{
+  from{
+    transform: scale(0) translateY(-60%);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1) translateY(0%);
+    opacity: 1;
+  }
+}

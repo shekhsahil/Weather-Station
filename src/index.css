@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  animation-name: blur;
+  animation-duration: 400ms;
+  user-select: none;
+}
+
+@keyframes blur {
+  from {
+    filter: blur(4px);
+  }
+  to {
+    filter: blur(0);
+  }
+}

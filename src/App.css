@@ -1,0 +1,18 @@
+[data-theme="light"] {
+  background-color: white;
+}
+
+[data-theme="dark"] :where(.card,nav) {
+  background-color: rgb(18, 17, 17);
+  color: white;
+}
+
+[data-theme="dark"] {
+  background-color: black;
+  color: white;
+}
+
+[data-theme="light"] :where(gauge-chart2){
+  
+  color: rgb(0, 0, 0);
+}
